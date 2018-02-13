@@ -1,0 +1,1343 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$/tmp/xcWyqjo05.obj
+idloc IDLOC 0 200000 200000 8 1
+init CODE 0 E4 E4 4 1
+reset_vec CODE 0 0 0 4 1
+config CONFIG 0 300000 300000 E 1
+$dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+cinit CODE 0 B14 B14 38 1
+text0 CODE 0 E8 E8 3A8 1
+text1 CODE 0 C34 C34 28 1
+text2 CODE 0 A80 A80 52 1
+text3 CODE 0 E76 E76 4 1
+text4 CODE 0 E1E E1E A 1
+text5 CODE 0 E28 E28 A 1
+text6 CODE 0 DF6 DF6 E 1
+text7 CODE 0 E32 E32 A 1
+text8 CODE 0 E3C E3C A 1
+text9 CODE 0 E50 E50 8 1
+text10 CODE 0 E46 E46 A 1
+text11 CODE 0 E58 E58 8 1
+text12 CODE 0 D8A D8A 14 1
+text13 CODE 0 C82 C82 24 1
+text14 CODE 0 AD2 AD2 42 1
+text15 CODE 0 A24 A24 5C 1
+text16 CODE 0 63E 63E F8 1
+text17 CODE 0 CA6 CA6 24 1
+text18 CODE 0 736 736 F6 1
+text19 CODE 0 82C 82C E6 1
+text20 CODE 0 490 490 1AE 1
+text21 CODE 0 912 912 AE 1
+text22 CODE 0 E7A E7A 4 1
+text23 CODE 0 E7E E7E 4 1
+text24 CODE 0 C5C C5C 26 1
+text25 CODE 0 DC6 DC6 10 1
+text26 CODE 0 D2A D2A 1C 1
+text27 CODE 0 D9E D9E 14 1
+text28 CODE 0 C0A C0A 2A 1
+text29 CODE 0 E04 E04 E 1
+text30 CODE 0 E82 E82 4 1
+text31 CODE 0 D5E D5E 16 1
+text32 CODE 0 DB2 DB2 14 1
+text33 CODE 0 D46 D46 18 1
+text34 CODE 0 D74 D74 16 1
+text35 CODE 0 B4C B4C 32 1
+text36 CODE 0 E12 E12 C 1
+text37 CODE 0 B7E B7E 30 1
+text39 CODE 0 BAE BAE 2E 1
+text40 CODE 0 CCA CCA 20 1
+text41 CODE 0 E60 E60 8 1
+text42 CODE 0 E68 E68 8 1
+text43 CODE 0 CEA CEA 20 1
+text44 CODE 0 9C0 9C0 64 1
+text45 CODE 0 BDC BDC 2E 1
+text46 CODE 0 E86 E86 4 1
+text47 CODE 0 D0A D0A 20 1
+text48 CODE 0 E70 E70 6 1
+text49 CODE 0 E8A E8A 4 1
+text50 CODE 0 DD6 DD6 10 1
+text51 CODE 0 DE6 DE6 10 1
+text52 CODE 0 E92 E92 2 1
+text53 CODE 0 E8E E8E 4 1
+nvBANK0 BANK0 1 93 93 4 1
+idataCOMRAM CODE 0 E94 E94 1 1
+cstackCOMRAM COMRAM 1 1 1 35 1
+cstackBANK0 BANK0 1 60 60 2B 1
+temp COMRAM 1 4A 4A 1 1
+bssBANK0 BANK0 1 8B 8B 8 1
+intcode CODE 0 8 8 DC 1
+dataCOMRAM COMRAM 1 49 49 1 1
+bssCOMRAM COMRAM 1 36 36 13 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 97-5FF 1
+SFR F38-FFF 1
+BANK0 97-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+CONST 4-7 1
+CONST E95-7FFF 1
+STACK 97-5FF 1
+SMALLCONST E95-7FFF 1
+CODE 4-7 1
+CODE E95-7FFF 1
+BIGRAM 4B-5F 1
+BIGRAM 97-5FF 1
+COMRAM 4B-5F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST E95-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+8 intcode CODE >126:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/adc.c
+8 intcode CODE >57:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/interrupt_manager.c
+52 intcode CODE >60:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/interrupt_manager.c
+56 intcode CODE >62:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/interrupt_manager.c
+5C intcode CODE >64:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/interrupt_manager.c
+60 intcode CODE >65:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/interrupt_manager.c
+62 intcode CODE >66:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/interrupt_manager.c
+68 intcode CODE >68:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/interrupt_manager.c
+78 intcode CODE >70:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/interrupt_manager.c
+7E intcode CODE >72:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/interrupt_manager.c
+98 intcode CODE >83:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/interrupt_manager.c
+E8E text53 CODE >129:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/adc.c
+E8E text53 CODE >132:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/adc.c
+E90 text53 CODE >133:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/adc.c
+E92 text52 CODE >81:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+E92 text52 CODE >83:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+DE6 text51 CODE >236:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+DE6 text51 CODE >238:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+DD6 text50 CODE >241:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+DD6 text50 CODE >243:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+E8A text49 CODE >211:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+E8A text49 CODE >213:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+E8C text49 CODE >214:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+E70 text48 CODE >205:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+E70 text48 CODE >207:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+E74 text48 CODE >208:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+D0A text47 CODE >146:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+D0A text47 CODE >148:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+D12 text47 CODE >149:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+E86 text46 CODE >174:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+E86 text46 CODE >176:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+BDC text45 CODE >50:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/sram_control.c
+BDE text45 CODE >52:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/sram_control.c
+BE0 text45 CODE >53:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/sram_control.c
+BE2 text45 CODE >54:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/sram_control.c
+BF2 text45 CODE >57:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/sram_control.c
+BF6 text45 CODE >60:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/sram_control.c
+BFA text45 CODE >62:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/sram_control.c
+BFE text45 CODE >65:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/sram_control.c
+C00 text45 CODE >66:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/sram_control.c
+C04 text45 CODE >69:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/sram_control.c
+C06 text45 CODE >70:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/sram_control.c
+C08 text45 CODE >71:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/sram_control.c
+9C0 text44 CODE >165:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+9C0 text44 CODE >166:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+9C6 text44 CODE >167:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+9C8 text44 CODE >168:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+9C8 text44 CODE >170:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+9CC text44 CODE >173:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+9D6 text44 CODE >175:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+9DE text44 CODE >178:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+9E8 text44 CODE >179:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+9F2 text44 CODE >181:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+9F4 text44 CODE >183:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+9F4 text44 CODE >185:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+9F8 text44 CODE >187:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+9FC text44 CODE >190:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+A06 text44 CODE >193:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+A0A text44 CODE >194:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+A12 text44 CODE >201:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+A14 text44 CODE >167:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+CEA text43 CODE >106:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+CEA text43 CODE >108:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+CF2 text43 CODE >109:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+E68 text42 CODE >189:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+E6A text42 CODE >191:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+E6E text42 CODE >192:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+E60 text41 CODE >141:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+E60 text41 CODE >142:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+E66 text41 CODE >143:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+CCA text40 CODE >130:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+CCA text40 CODE >132:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+CD2 text40 CODE >133:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+BAE text39 CODE >65:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+BAE text39 CODE >66:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+BB0 text39 CODE >67:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+BB6 text39 CODE >68:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+BBE text39 CODE >69:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+BC6 text39 CODE >70:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+BCA text39 CODE >71:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+BCC text39 CODE >72:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+BD0 text39 CODE >74:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+BD2 text39 CODE >75:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+BD6 text39 CODE >76:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+BD6 text39 CODE >78:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+BDA text39 CODE >79:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+B7E text37 CODE >108:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/adc.c
+B80 text37 CODE >111:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/adc.c
+B92 text37 CODE >114:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/adc.c
+B94 text37 CODE >117:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/adc.c
+B96 text37 CODE >120:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/adc.c
+B9A text37 CODE >124:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/adc.c
+E12 text36 CODE >93:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/eusart2.c
+E14 text36 CODE >95:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/eusart2.c
+E18 text36 CODE >99:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/eusart2.c
+E1C text36 CODE >100:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/eusart2.c
+B4C text35 CODE >81:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/pwm4.c
+B4C text35 CODE >84:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/pwm4.c
+B66 text35 CODE >87:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/pwm4.c
+B7C text35 CODE >88:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/pwm4.c
+D74 text34 CODE >9:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/sram_control.c
+D74 text34 CODE >12:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/sram_control.c
+D7A text34 CODE >13:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/sram_control.c
+D7E text34 CODE >16:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/sram_control.c
+D82 text34 CODE >19:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/sram_control.c
+D84 text34 CODE >22:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/sram_control.c
+D86 text34 CODE >23:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/sram_control.c
+D88 text34 CODE >24:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/sram_control.c
+D46 text33 CODE >58:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/adc.c
+D46 text33 CODE >63:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/adc.c
+D4A text33 CODE >66:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/adc.c
+D4E text33 CODE >69:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/adc.c
+D52 text33 CODE >72:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/adc.c
+D56 text33 CODE >75:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/adc.c
+D5A text33 CODE >78:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/adc.c
+D5C text33 CODE >79:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/adc.c
+DB2 text32 CODE >57:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/ccp5.c
+DB2 text32 CODE >62:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/ccp5.c
+DB8 text32 CODE >65:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/ccp5.c
+DBC text32 CODE >68:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/ccp5.c
+DC0 text32 CODE >71:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/ccp5.c
+DC4 text32 CODE >73:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/ccp5.c
+D5E text31 CODE >53:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/eusart2.c
+D5E text31 CODE >58:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/eusart2.c
+D62 text31 CODE >61:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/eusart2.c
+D66 text31 CODE >64:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/eusart2.c
+D6A text31 CODE >67:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/eusart2.c
+D6E text31 CODE >70:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/eusart2.c
+D72 text31 CODE >73:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/eusart2.c
+E82 text30 CODE >51:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/interrupt_manager.c
+E82 text30 CODE >54:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/interrupt_manager.c
+E84 text30 CODE >55:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/interrupt_manager.c
+E04 text29 CODE >125:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/mcc.c
+E04 text29 CODE >128:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/mcc.c
+E08 text29 CODE >130:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/mcc.c
+E0C text29 CODE >132:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/mcc.c
+E10 text29 CODE >133:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/mcc.c
+C0A text28 CODE >52:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/pin_manager.c
+C0A text28 CODE >57:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/pin_manager.c
+C0E text28 CODE >58:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/pin_manager.c
+C12 text28 CODE >59:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/pin_manager.c
+C16 text28 CODE >64:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/pin_manager.c
+C18 text28 CODE >65:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/pin_manager.c
+C1C text28 CODE >66:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/pin_manager.c
+C1E text28 CODE >71:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/pin_manager.c
+C24 text28 CODE >72:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/pin_manager.c
+C28 text28 CODE >73:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/pin_manager.c
+C2C text28 CODE >78:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/pin_manager.c
+C30 text28 CODE >79:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/pin_manager.c
+C32 text28 CODE >86:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/pin_manager.c
+D9E text27 CODE >63:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/pwm4.c
+D9E text27 CODE >68:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/pwm4.c
+DA4 text27 CODE >71:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/pwm4.c
+DA8 text27 CODE >74:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/pwm4.c
+DAC text27 CODE >77:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/pwm4.c
+DB0 text27 CODE >79:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/pwm4.c
+D2A text26 CODE >62:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/tmr1.c
+D2A text26 CODE >67:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/tmr1.c
+D2E text26 CODE >70:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/tmr1.c
+D32 text26 CODE >73:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/tmr1.c
+D36 text26 CODE >76:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/tmr1.c
+D3E text26 CODE >79:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/tmr1.c
+D40 text26 CODE >82:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/tmr1.c
+D44 text26 CODE >83:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/tmr1.c
+DC6 text25 CODE >61:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/tmr2.c
+DC6 text25 CODE >66:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/tmr2.c
+DCA text25 CODE >69:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/tmr2.c
+DCE text25 CODE >72:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/tmr2.c
+DD0 text25 CODE >75:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/tmr2.c
+DD4 text25 CODE >76:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/tmr2.c
+C5C text24 CODE >112:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/mcc.c
+C5C text24 CODE >114:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/mcc.c
+C60 text24 CODE >115:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/mcc.c
+C64 text24 CODE >116:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/mcc.c
+C68 text24 CODE >117:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/mcc.c
+C6C text24 CODE >118:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/mcc.c
+C70 text24 CODE >119:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/mcc.c
+C74 text24 CODE >120:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/mcc.c
+C78 text24 CODE >121:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/mcc.c
+C7C text24 CODE >122:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/mcc.c
+C80 text24 CODE >123:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/mcc.c
+E7E text23 CODE >85:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/tmr1.c
+E7E text23 CODE >88:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/tmr1.c
+E80 text23 CODE >89:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/tmr1.c
+E7A text22 CODE >78:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/tmr2.c
+E7A text22 CODE >81:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/tmr2.c
+E7C text22 CODE >82:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/tmr2.c
+912 text21 CODE >62:/Applications/microchip/xc8/v1.45/sources/common/float.c
+912 text21 CODE >64:/Applications/microchip/xc8/v1.45/sources/common/float.c
+922 text21 CODE >65:/Applications/microchip/xc8/v1.45/sources/common/float.c
+930 text21 CODE >66:/Applications/microchip/xc8/v1.45/sources/common/float.c
+930 text21 CODE >67:/Applications/microchip/xc8/v1.45/sources/common/float.c
+932 text21 CODE >68:/Applications/microchip/xc8/v1.45/sources/common/float.c
+93A text21 CODE >66:/Applications/microchip/xc8/v1.45/sources/common/float.c
+93A text21 CODE >69:/Applications/microchip/xc8/v1.45/sources/common/float.c
+958 text21 CODE >70:/Applications/microchip/xc8/v1.45/sources/common/float.c
+958 text21 CODE >71:/Applications/microchip/xc8/v1.45/sources/common/float.c
+95A text21 CODE >72:/Applications/microchip/xc8/v1.45/sources/common/float.c
+966 text21 CODE >73:/Applications/microchip/xc8/v1.45/sources/common/float.c
+96E text21 CODE >70:/Applications/microchip/xc8/v1.45/sources/common/float.c
+96E text21 CODE >74:/Applications/microchip/xc8/v1.45/sources/common/float.c
+98C text21 CODE >75:/Applications/microchip/xc8/v1.45/sources/common/float.c
+98C text21 CODE >76:/Applications/microchip/xc8/v1.45/sources/common/float.c
+98E text21 CODE >77:/Applications/microchip/xc8/v1.45/sources/common/float.c
+996 text21 CODE >75:/Applications/microchip/xc8/v1.45/sources/common/float.c
+996 text21 CODE >78:/Applications/microchip/xc8/v1.45/sources/common/float.c
+9A0 text21 CODE >79:/Applications/microchip/xc8/v1.45/sources/common/float.c
+9A2 text21 CODE >80:/Applications/microchip/xc8/v1.45/sources/common/float.c
+9A4 text21 CODE >81:/Applications/microchip/xc8/v1.45/sources/common/float.c
+9A8 text21 CODE >82:/Applications/microchip/xc8/v1.45/sources/common/float.c
+9AC text21 CODE >83:/Applications/microchip/xc8/v1.45/sources/common/float.c
+9B0 text21 CODE >84:/Applications/microchip/xc8/v1.45/sources/common/float.c
+9B2 text21 CODE >85:/Applications/microchip/xc8/v1.45/sources/common/float.c
+490 text20 CODE >86:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+490 text20 CODE >90:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+4A6 text20 CODE >91:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+4BA text20 CODE >92:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+4D6 text20 CODE >93:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+4E4 text20 CODE >94:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+500 text20 CODE >95:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+50E text20 CODE >96:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+512 text20 CODE >97:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+514 text20 CODE >98:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+516 text20 CODE >99:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+518 text20 CODE >100:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+51A text20 CODE >101:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+51C text20 CODE >102:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+528 text20 CODE >103:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+52A text20 CODE >104:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+536 text20 CODE >106:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+53E text20 CODE >110:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+546 text20 CODE >111:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+548 text20 CODE >112:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+560 text20 CODE >113:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+560 text20 CODE >114:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+568 text20 CODE >115:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+56A text20 CODE >113:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+56A text20 CODE >116:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+574 text20 CODE >117:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+57C text20 CODE >121:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+584 text20 CODE >122:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+586 text20 CODE >123:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+59E text20 CODE >124:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+59E text20 CODE >125:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+5A6 text20 CODE >126:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+5A8 text20 CODE >124:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+5A8 text20 CODE >127:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+5B0 text20 CODE >129:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+5B4 text20 CODE >131:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+5C0 text20 CODE >132:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+5CC text20 CODE >133:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+5CC text20 CODE >134:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+5D0 text20 CODE >136:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+5DC text20 CODE >137:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+5E8 text20 CODE >138:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+5E8 text20 CODE >139:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+5EC text20 CODE >140:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+5F8 text20 CODE >141:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+5FC text20 CODE >142:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+608 text20 CODE >143:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+614 text20 CODE >144:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+618 text20 CODE >145:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+618 text20 CODE >146:/Applications/microchip/xc8/v1.45/sources/common/ftadd.c
+82C text19 CODE >54:/Applications/microchip/xc8/v1.45/sources/common/ftdiv.c
+82C text19 CODE >63:/Applications/microchip/xc8/v1.45/sources/common/ftdiv.c
+846 text19 CODE >64:/Applications/microchip/xc8/v1.45/sources/common/ftdiv.c
+854 text19 CODE >65:/Applications/microchip/xc8/v1.45/sources/common/ftdiv.c
+86E text19 CODE >66:/Applications/microchip/xc8/v1.45/sources/common/ftdiv.c
+87C text19 CODE >67:/Applications/microchip/xc8/v1.45/sources/common/ftdiv.c
+888 text19 CODE >68:/Applications/microchip/xc8/v1.45/sources/common/ftdiv.c
+88E text19 CODE >69:/Applications/microchip/xc8/v1.45/sources/common/ftdiv.c
+892 text19 CODE >70:/Applications/microchip/xc8/v1.45/sources/common/ftdiv.c
+896 text19 CODE >71:/Applications/microchip/xc8/v1.45/sources/common/ftdiv.c
+89A text19 CODE >72:/Applications/microchip/xc8/v1.45/sources/common/ftdiv.c
+89C text19 CODE >73:/Applications/microchip/xc8/v1.45/sources/common/ftdiv.c
+8A8 text19 CODE >74:/Applications/microchip/xc8/v1.45/sources/common/ftdiv.c
+8AA text19 CODE >75:/Applications/microchip/xc8/v1.45/sources/common/ftdiv.c
+8B6 text19 CODE >76:/Applications/microchip/xc8/v1.45/sources/common/ftdiv.c
+8BA text19 CODE >77:/Applications/microchip/xc8/v1.45/sources/common/ftdiv.c
+8BA text19 CODE >78:/Applications/microchip/xc8/v1.45/sources/common/ftdiv.c
+8C2 text19 CODE >79:/Applications/microchip/xc8/v1.45/sources/common/ftdiv.c
+8D2 text19 CODE >80:/Applications/microchip/xc8/v1.45/sources/common/ftdiv.c
+8DE text19 CODE >81:/Applications/microchip/xc8/v1.45/sources/common/ftdiv.c
+8E0 text19 CODE >82:/Applications/microchip/xc8/v1.45/sources/common/ftdiv.c
+8E0 text19 CODE >83:/Applications/microchip/xc8/v1.45/sources/common/ftdiv.c
+8E8 text19 CODE >84:/Applications/microchip/xc8/v1.45/sources/common/ftdiv.c
+8EC text19 CODE >85:/Applications/microchip/xc8/v1.45/sources/common/ftdiv.c
+736 text18 CODE >62:/Applications/microchip/xc8/v1.45/sources/common/ftmul.c
+736 text18 CODE >67:/Applications/microchip/xc8/v1.45/sources/common/ftmul.c
+752 text18 CODE >68:/Applications/microchip/xc8/v1.45/sources/common/ftmul.c
+760 text18 CODE >69:/Applications/microchip/xc8/v1.45/sources/common/ftmul.c
+77A text18 CODE >70:/Applications/microchip/xc8/v1.45/sources/common/ftmul.c
+788 text18 CODE >71:/Applications/microchip/xc8/v1.45/sources/common/ftmul.c
+78E text18 CODE >72:/Applications/microchip/xc8/v1.45/sources/common/ftmul.c
+792 text18 CODE >73:/Applications/microchip/xc8/v1.45/sources/common/ftmul.c
+796 text18 CODE >74:/Applications/microchip/xc8/v1.45/sources/common/ftmul.c
+79A text18 CODE >75:/Applications/microchip/xc8/v1.45/sources/common/ftmul.c
+79C text18 CODE >77:/Applications/microchip/xc8/v1.45/sources/common/ftmul.c
+79E text18 CODE >78:/Applications/microchip/xc8/v1.45/sources/common/ftmul.c
+7AA text18 CODE >79:/Applications/microchip/xc8/v1.45/sources/common/ftmul.c
+7B6 text18 CODE >134:/Applications/microchip/xc8/v1.45/sources/common/ftmul.c
+7BA text18 CODE >135:/Applications/microchip/xc8/v1.45/sources/common/ftmul.c
+7BA text18 CODE >136:/Applications/microchip/xc8/v1.45/sources/common/ftmul.c
+7BE text18 CODE >137:/Applications/microchip/xc8/v1.45/sources/common/ftmul.c
+7CA text18 CODE >138:/Applications/microchip/xc8/v1.45/sources/common/ftmul.c
+7D2 text18 CODE >139:/Applications/microchip/xc8/v1.45/sources/common/ftmul.c
+7DA text18 CODE >140:/Applications/microchip/xc8/v1.45/sources/common/ftmul.c
+7DE text18 CODE >143:/Applications/microchip/xc8/v1.45/sources/common/ftmul.c
+7E2 text18 CODE >144:/Applications/microchip/xc8/v1.45/sources/common/ftmul.c
+7E2 text18 CODE >145:/Applications/microchip/xc8/v1.45/sources/common/ftmul.c
+7E6 text18 CODE >146:/Applications/microchip/xc8/v1.45/sources/common/ftmul.c
+7F2 text18 CODE >147:/Applications/microchip/xc8/v1.45/sources/common/ftmul.c
+7FA text18 CODE >148:/Applications/microchip/xc8/v1.45/sources/common/ftmul.c
+802 text18 CODE >149:/Applications/microchip/xc8/v1.45/sources/common/ftmul.c
+806 text18 CODE >156:/Applications/microchip/xc8/v1.45/sources/common/ftmul.c
+CA6 text17 CODE >15:/Applications/microchip/xc8/v1.45/sources/common/ftneg.c
+CA6 text17 CODE >17:/Applications/microchip/xc8/v1.45/sources/common/ftneg.c
+CB0 text17 CODE >18:/Applications/microchip/xc8/v1.45/sources/common/ftneg.c
+CBC text17 CODE >19:/Applications/microchip/xc8/v1.45/sources/common/ftneg.c
+CC8 text17 CODE >20:/Applications/microchip/xc8/v1.45/sources/common/ftneg.c
+63E text16 CODE >44:/Applications/microchip/xc8/v1.45/sources/common/fttol.c
+63E text16 CODE >49:/Applications/microchip/xc8/v1.45/sources/common/fttol.c
+65A text16 CODE >50:/Applications/microchip/xc8/v1.45/sources/common/fttol.c
+66C text16 CODE >51:/Applications/microchip/xc8/v1.45/sources/common/fttol.c
+694 text16 CODE >52:/Applications/microchip/xc8/v1.45/sources/common/fttol.c
+696 text16 CODE >53:/Applications/microchip/xc8/v1.45/sources/common/fttol.c
+6A2 text16 CODE >54:/Applications/microchip/xc8/v1.45/sources/common/fttol.c
+6B0 text16 CODE >55:/Applications/microchip/xc8/v1.45/sources/common/fttol.c
+6B4 text16 CODE >56:/Applications/microchip/xc8/v1.45/sources/common/fttol.c
+6B8 text16 CODE >57:/Applications/microchip/xc8/v1.45/sources/common/fttol.c
+6C2 text16 CODE >58:/Applications/microchip/xc8/v1.45/sources/common/fttol.c
+6D4 text16 CODE >60:/Applications/microchip/xc8/v1.45/sources/common/fttol.c
+6DE text16 CODE >61:/Applications/microchip/xc8/v1.45/sources/common/fttol.c
+6E2 text16 CODE >62:/Applications/microchip/xc8/v1.45/sources/common/fttol.c
+6E4 text16 CODE >63:/Applications/microchip/xc8/v1.45/sources/common/fttol.c
+6EA text16 CODE >64:/Applications/microchip/xc8/v1.45/sources/common/fttol.c
+6FC text16 CODE >65:/Applications/microchip/xc8/v1.45/sources/common/fttol.c
+6FC text16 CODE >66:/Applications/microchip/xc8/v1.45/sources/common/fttol.c
+706 text16 CODE >67:/Applications/microchip/xc8/v1.45/sources/common/fttol.c
+708 text16 CODE >65:/Applications/microchip/xc8/v1.45/sources/common/fttol.c
+708 text16 CODE >68:/Applications/microchip/xc8/v1.45/sources/common/fttol.c
+70E text16 CODE >70:/Applications/microchip/xc8/v1.45/sources/common/fttol.c
+714 text16 CODE >71:/Applications/microchip/xc8/v1.45/sources/common/fttol.c
+724 text16 CODE >72:/Applications/microchip/xc8/v1.45/sources/common/fttol.c
+A24 text15 CODE >35:/Applications/microchip/xc8/v1.45/sources/common/lltoft.c
+A24 text15 CODE >38:/Applications/microchip/xc8/v1.45/sources/common/lltoft.c
+A28 text15 CODE >41:/Applications/microchip/xc8/v1.45/sources/common/lltoft.c
+A2A text15 CODE >42:/Applications/microchip/xc8/v1.45/sources/common/lltoft.c
+A34 text15 CODE >43:/Applications/microchip/xc8/v1.45/sources/common/lltoft.c
+A36 text15 CODE >41:/Applications/microchip/xc8/v1.45/sources/common/lltoft.c
+A36 text15 CODE >44:/Applications/microchip/xc8/v1.45/sources/common/lltoft.c
+A5A text15 CODE >45:/Applications/microchip/xc8/v1.45/sources/common/lltoft.c
+AD2 text14 CODE >8:/Applications/microchip/xc8/v1.45/sources/common/lwmod.c
+AD2 text14 CODE >13:/Applications/microchip/xc8/v1.45/sources/common/lwmod.c
+ADA text14 CODE >14:/Applications/microchip/xc8/v1.45/sources/common/lwmod.c
+ADE text14 CODE >15:/Applications/microchip/xc8/v1.45/sources/common/lwmod.c
+AE0 text14 CODE >16:/Applications/microchip/xc8/v1.45/sources/common/lwmod.c
+AE6 text14 CODE >17:/Applications/microchip/xc8/v1.45/sources/common/lwmod.c
+AE8 text14 CODE >15:/Applications/microchip/xc8/v1.45/sources/common/lwmod.c
+AE8 text14 CODE >18:/Applications/microchip/xc8/v1.45/sources/common/lwmod.c
+AEC text14 CODE >20:/Applications/microchip/xc8/v1.45/sources/common/lwmod.c
+AF8 text14 CODE >21:/Applications/microchip/xc8/v1.45/sources/common/lwmod.c
+B00 text14 CODE >22:/Applications/microchip/xc8/v1.45/sources/common/lwmod.c
+B06 text14 CODE >23:/Applications/microchip/xc8/v1.45/sources/common/lwmod.c
+B0A text14 CODE >25:/Applications/microchip/xc8/v1.45/sources/common/lwmod.c
+B12 text14 CODE >26:/Applications/microchip/xc8/v1.45/sources/common/lwmod.c
+C82 text13 CODE >28:/Applications/microchip/xc8/v1.45/sources/common/lwtoft.c
+C82 text13 CODE >30:/Applications/microchip/xc8/v1.45/sources/common/lwtoft.c
+D8A text12 CODE >100:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+D8A text12 CODE >102:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+D8E text12 CODE >134:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+D92 text12 CODE >135:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+D96 text12 CODE >136:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+D9A text12 CODE >138:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+D9C text12 CODE >139:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+E58 text11 CODE >179:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+E5A text11 CODE >181:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+E5E text11 CODE >182:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+E46 text10 CODE >261:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+E46 text10 CODE >262:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+E4E text10 CODE >263:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+E50 text9 CODE >184:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+E52 text9 CODE >186:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+E56 text9 CODE >187:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+E3C text8 CODE >153:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+E3C text8 CODE >154:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+E44 text8 CODE >155:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+E32 text7 CODE >265:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+E32 text7 CODE >266:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+E3A text7 CODE >267:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+DF6 text6 CODE >113:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+DF6 text6 CODE >114:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+E02 text6 CODE >115:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+E28 text5 CODE >121:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+E28 text5 CODE >122:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+E30 text5 CODE >123:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+E1E text4 CODE >137:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+E1E text4 CODE >138:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+E26 text4 CODE >139:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+E76 text3 CODE >41:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+E76 text3 CODE >43:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+E78 text3 CODE >44:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/i2c2_driver.c
+A80 text2 CODE >43:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+A80 text2 CODE >45:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+A84 text2 CODE >47:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+A90 text2 CODE >48:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+A94 text2 CODE >49:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+A9A text2 CODE >50:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+AA0 text2 CODE >51:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+AAC text2 CODE >52:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+AB8 text2 CODE >54:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+AC4 text2 CODE >57:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+AD0 text2 CODE >59:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/mcc_generated_files/drivers/i2c_slave.c
+C34 text1 CODE >27:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/sram_control.c
+C36 text1 CODE >30:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/sram_control.c
+C38 text1 CODE >33:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/sram_control.c
+C3A text1 CODE >34:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/sram_control.c
+C3C text1 CODE >35:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/sram_control.c
+C4C text1 CODE >37:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/sram_control.c
+C50 text1 CODE >40:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/sram_control.c
+C54 text1 CODE >43:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/sram_control.c
+C56 text1 CODE >44:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/sram_control.c
+C58 text1 CODE >46:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/sram_control.c
+E8 text0 CODE >24:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+E8 text0 CODE >27:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+EC text0 CODE >30:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+EE text0 CODE >33:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+F0 text0 CODE >38:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+F4 text0 CODE >42:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+F8 text0 CODE >43:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+FC text0 CODE >45:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+100 text0 CODE >46:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+104 text0 CODE >49:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+108 text0 CODE >52:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+114 text0 CODE >53:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+126 text0 CODE >56:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+12A text0 CODE >59:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+134 text0 CODE >60:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+13C text0 CODE >62:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+13C text0 CODE >65:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+144 text0 CODE >68:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+14E text0 CODE >69:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+15A text0 CODE >70:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+168 text0 CODE >73:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+16E text0 CODE >75:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+17A text0 CODE >76:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+18A text0 CODE >77:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+18C text0 CODE >79:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+198 text0 CODE >80:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+198 text0 CODE >81:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+1A4 text0 CODE >82:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+1AE text0 CODE >84:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+1BA text0 CODE >85:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+1CC text0 CODE >86:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+1DC text0 CODE >87:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+1DC text0 CODE >88:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+1E8 text0 CODE >89:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+1F4 text0 CODE >91:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+200 text0 CODE >92:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+212 text0 CODE >93:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+222 text0 CODE >94:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+222 text0 CODE >95:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+22E text0 CODE >96:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+23A text0 CODE >97:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+246 text0 CODE >98:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+252 text0 CODE >99:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+254 text0 CODE >100:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+260 text0 CODE >101:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+260 text0 CODE >105:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+264 text0 CODE >108:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+26E text0 CODE >109:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+276 text0 CODE >110:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+27E text0 CODE >111:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+296 text0 CODE >112:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+296 text0 CODE >118:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+2B2 text0 CODE >120:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+34E text0 CODE >121:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+356 text0 CODE >122:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+35E text0 CODE >123:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+364 text0 CODE >124:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+36E text0 CODE >125:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+38C text0 CODE >126:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+39A text0 CODE >127:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+39C text0 CODE >128:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+488 text0 CODE >129:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+488 text0 CODE >130:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+48E text0 CODE >62:/Users/Sam/Documents/EE475/Lab2-Remote-SRAM-Control.X/main.c
+B14 cinit CODE >6696:/tmp/xcV3K3iNx
+B14 cinit CODE >6698:/tmp/xcV3K3iNx
+B14 cinit CODE >6701:/tmp/xcV3K3iNx
+B14 cinit CODE >6758:/tmp/xcV3K3iNx
+B16 cinit CODE >6759:/tmp/xcV3K3iNx
+B18 cinit CODE >6760:/tmp/xcV3K3iNx
+B1A cinit CODE >6761:/tmp/xcV3K3iNx
+B1C cinit CODE >6762:/tmp/xcV3K3iNx
+B1E cinit CODE >6763:/tmp/xcV3K3iNx
+B20 cinit CODE >6764:/tmp/xcV3K3iNx
+B22 cinit CODE >6765:/tmp/xcV3K3iNx
+B26 cinit CODE >6769:/tmp/xcV3K3iNx
+B2A cinit CODE >6770:/tmp/xcV3K3iNx
+B2C cinit CODE >6771:/tmp/xcV3K3iNx
+B2C cinit CODE >6772:/tmp/xcV3K3iNx
+B2E cinit CODE >6773:/tmp/xcV3K3iNx
+B30 cinit CODE >6774:/tmp/xcV3K3iNx
+B32 cinit CODE >6777:/tmp/xcV3K3iNx
+B36 cinit CODE >6778:/tmp/xcV3K3iNx
+B38 cinit CODE >6779:/tmp/xcV3K3iNx
+B38 cinit CODE >6780:/tmp/xcV3K3iNx
+B3A cinit CODE >6781:/tmp/xcV3K3iNx
+B3C cinit CODE >6782:/tmp/xcV3K3iNx
+B3E cinit CODE >6788:/tmp/xcV3K3iNx
+B3E cinit CODE >6790:/tmp/xcV3K3iNx
+B40 cinit CODE >6791:/tmp/xcV3K3iNx
+B42 cinit CODE >6793:/tmp/xcV3K3iNx
+B44 cinit CODE >6794:/tmp/xcV3K3iNx
+B46 cinit CODE >6795:/tmp/xcV3K3iNx
+B48 cinit CODE >6796:/tmp/xcV3K3iNx
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___lwmod@counter 1A 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_i2c2_driver_TXData 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hspace_0 30000E 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hspace_1 97 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hspace_2 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_IESO$OFF 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+sram_read@data 18 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_i2c1Data 48 0 COMRAM 1 bssCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___ftdiv@exp 2E 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst /tmp/xcWyqjo05.obj
+__size_of_i2c_slave_DefWrInterruptHandler 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_i2c2_driver_setI2cISR E32 0 CODE 0 text7 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+sram_read@address 17 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_INTERRUPT_Initialize E86 0 CODE 0 text30 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_T1CONbits FCD 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+i2c2_driver_setMask@mask 16 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+ADC_GetConversion@channel 1A 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_LATA F89 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_LATB F8A 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_LATC F8B 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_TMR1 FCE 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_TMR2 FBC 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_WPUB F61 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___sp 0 0 STACK 2 stack /tmp/xcWyqjo05.obj
+_main E8 0 CODE 0 text0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+btemp 4A 0 COMRAM 1 temp dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_ADC_GetConversion BAE 0 CODE 0 text37 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___ftadd@f1 69 0 BANK0 1 cstackBANK0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___ftadd@f2 6C 0 BANK0 1 cstackBANK0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+start E4 0 CODE 0 init /tmp/xcWyqjo05.obj
+__size_of___ftadd 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of___ftdiv 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of___ftmul 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of___ftneg 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of___fttol 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of___lwmod 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_WDTEN$OFF 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_i2c2_driver_getRXData 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_DEBUG$OFF 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___ftdiv@f1 21 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___ftdiv@f2 24 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___ftdiv@f3 2B 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_CCP5_Initialize 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_CCP2MX$PORTC1 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hpowerup E4 0 CODE 0 powerup dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_i2c_slave_PWMRdInterruptHandler A24 0 CODE 0 text44 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_pwmCommand 36 0 COMRAM 1 bssCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_i2c_slave_BusCollisionISR 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_i2c2_driver_releaseClock 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_TMR1_Initialize 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_TMR1_StartTimer 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_TMR2_Initialize DC6 0 CODE 0 text25 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_TMR2_StartTimer E7A 0 CODE 0 text22 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_CCP3MX$PORTB5 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_i2c2_driver_setAddr E60 0 CODE 0 text11 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_i2c2_driver_setMask E58 0 CODE 0 text9 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+i2c2_driver_setBusCollisionISR@f 16 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__accesstop 60 0 ABS 0 - /tmp/xcWyqjo05.obj
+intlevel0 0 0 CODE 0 text /tmp/xcWyqjo05.obj
+intlevel1 0 0 CODE 0 text /tmp/xcWyqjo05.obj
+intlevel2 0 0 CODE 0 text /tmp/xcWyqjo05.obj
+intlevel3 0 0 CODE 0 text /tmp/xcWyqjo05.obj
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_EUSART2_Initialize D74 0 CODE 0 text31 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_ADC_Initialize 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+wtemp6 4B 0 COMRAM 1 temp dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_EBTR0$OFF 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_EBTR1$OFF 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_EBTR2$OFF 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_EBTR3$OFF 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_PWM4_LoadDutyValue 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_i2c_slave_PWMAddrInterruptHandler 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_EBTRB$OFF 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_P2BMX$PORTB5 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hifardata 0 0 CODE 0 ifardata dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_i2c_slave_AddrCallBack 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+main@commandType 8A 0 BANK0 1 cstackBANK0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_i2c2_driver_initSlaveHardware D9E 0 CODE 0 text12 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__pidataCOMRAM E94 0 CODE 0 idataCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___ftmul@f1 30 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___ftmul@f2 33 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_PRICLKEN$ON 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___ftneg@f1 27 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_FOSC$INTIO67 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_ADCON0 FC2 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_ADCON1 FC1 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_ADCON2 FC0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_ADRESH FC4 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_ADRESL FC3 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_ANSELA F38 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_ANSELB F39 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_ANSELC F3A 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___inthi_sp 0 0 STACK 2 stack /tmp/xcWyqjo05.obj
+___intlo_sp 0 0 STACK 2 stack /tmp/xcWyqjo05.obj
+sram_write@address 3 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_i2c2_driver_setBusCollisionISR E50 0 CODE 0 text10 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_i2c2_driver_isData 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_i2c2_driver_isRead 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_CCPR4H F59 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_CCPR4L F58 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_CCPR5H F56 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_CCPR5L F55 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+sram_write@data 1 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_INTERRUPT_InterruptManager E4 0 CODE 0 intcode dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_EUSART2_Initialize D5E 0 CODE 0 text31 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___fttol@f1 75 0 BANK0 1 cstackBANK0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_ADC_GetConversion B7E 0 CODE 0 text37 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__LnvBANK0 0 0 ABS 0 nvBANK0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hintcodelo E4 0 CODE 0 intcodelo dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___lwmod@divisor 18 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of___ftpack 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_i2c_slave_setReadIntHandler E28 0 CODE 0 text5 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of___ftadd 63E 0 CODE 0 text20 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of___ftdiv 912 0 CODE 0 text19 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of___ftmul 82C 0 CODE 0 text18 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of___ftneg CCA 0 CODE 0 text17 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of___fttol 736 0 CODE 0 text16 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of___lwmod B14 0 CODE 0 text14 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_SRAM_CONTROL_INITIALIZE 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_i2c2_driver_releaseClock E8E 0 CODE 0 text49 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_i2c_slave_WrCallBack 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_sram_write BDC 0 CODE 0 text45 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_TMR2_Initialize 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_TMR2_StartTimer 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of___lltoft 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_INTCON2bits FF1 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of___lwtoft 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___lwmod@dividend 16 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lintcodelo E4 0 CODE 0 intcodelo dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_PIN_MANAGER_Initialize C0A 0 CODE 0 text28 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_i2c_slave_RdCallBack CEA 0 CODE 0 text43 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_SSP2CON1bits F6C 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+start_initialization B14 0 CODE 0 cinit dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_SSP2CON2bits F6B 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_PBADEN$ON 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_i2c_slave_open A80 0 CODE 0 text2 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_OSCCON FD3 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_i2c_slave_BusCollisionISR E92 0 CODE 0 text52 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_i2c_slave_WrCallBack CEA 0 CODE 0 text40 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_ADC_ISR E8E 0 CODE 0 text53 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___rparam_used 1 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_RCREG2 F74 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_RCSTA2 F71 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_SYSTEM_Initialize C82 0 CODE 0 text24 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_WDTPS$32768 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_SPBRG2 F75 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__pcstackBANK0 60 0 BANK0 1 cstackBANK0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_T1GCON FCC 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___fttol@exp1 83 0 BANK0 1 cstackBANK0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___fttol@lval 7F 0 BANK0 1 cstackBANK0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_i2c_slave_setWriteIntHandler E1E 0 CODE 0 text4 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_i2c_slave_setAddrIntHandler 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___lltoft@c 1E 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_TXREG2 F73 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_TXSTA2 F72 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___ftpack 912 0 CODE 0 text21 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_sram_read C5C 0 CODE 0 text1 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_sram_read 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___ftpack@arg 16 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___ftpack@exp 19 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+EUSART2_Write@txData 16 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of___ftpack 9C0 0 CODE 0 text21 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hbank1 0 0 ABS 0 bank1 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hbank2 0 0 ABS 0 bank2 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hbank3 0 0 ABS 0 bank3 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hbank4 0 0 ABS 0 bank4 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hbank5 0 0 ABS 0 bank5 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hcinit 0 0 ABS 0 cinit dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hconst 0 0 CONST 0 const dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hidata 0 0 CODE 0 idata dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hidloc 200008 0 IDLOC 0 idloc dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hparam 0 0 COMRAM 1 rparam dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_OSCILLATOR_Initialize 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hstack 0 0 STACK 2 stack dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext0 0 0 ABS 0 text0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext1 0 0 ABS 0 text1 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext2 0 0 ABS 0 text2 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext3 0 0 ABS 0 text3 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext4 0 0 ABS 0 text4 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext5 0 0 ABS 0 text5 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext6 0 0 ABS 0 text6 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext7 0 0 ABS 0 text7 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext8 0 0 ABS 0 text8 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext9 0 0 ABS 0 text9 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+main@parameter 88 0 BANK0 1 cstackBANK0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hbigram 0 0 ABS 0 bigram dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__smallconst 0 0 SMALLCONST 0 smallconst /tmp/xcWyqjo05.obj
+_BAUDCON2 F70 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_i2c_slave_DefWrInterruptHandler E68 0 CODE 0 text41 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_sram_write C0A 0 CODE 0 text45 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___lltoft A24 0 CODE 0 text15 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_i2c2_driver_setBusCollisionISR E46 0 CODE 0 text10 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hcomram 0 0 ABS 0 comram dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hconfig 30000E 0 CONFIG 0 config dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___lwtoft C82 0 CODE 0 text13 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_i2c_slave_setAddrIntHandler E46 0 CODE 0 text8 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_sram_read C34 0 CODE 0 text1 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_i2c2_driver_initSlaveHardware 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_i2c_slave_open AD2 0 CODE 0 text2 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lbank0 0 0 ABS 0 bank0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lbank1 0 0 ABS 0 bank1 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lbank2 0 0 ABS 0 bank2 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lbank3 0 0 ABS 0 bank3 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lbank4 0 0 ABS 0 bank4 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lbank5 0 0 ABS 0 bank5 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lcinit 0 0 ABS 0 cinit dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lconst 0 0 CONST 0 const dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_T1GCONbits FCC 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lidata 0 0 CODE 0 idata dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lidloc 200000 0 IDLOC 0 idloc dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___ftadd@exp1 74 0 BANK0 1 cstackBANK0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___ftadd@exp2 73 0 BANK0 1 cstackBANK0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___ftadd@sign 72 0 BANK0 1 cstackBANK0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lparam 0 0 COMRAM 1 rparam dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_i2c2_driver_setI2cISR 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lstack 0 0 STACK 2 stack dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext0 0 0 ABS 0 text0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext1 0 0 ABS 0 text1 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext2 0 0 ABS 0 text2 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext3 0 0 ABS 0 text3 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext4 0 0 ABS 0 text4 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext5 0 0 ABS 0 text5 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext6 0 0 ABS 0 text6 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext7 0 0 ABS 0 text7 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext8 0 0 ABS 0 text8 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext9 0 0 ABS 0 text9 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of___lltoft A80 0 CODE 0 text15 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of___lwtoft CA6 0 CODE 0 text13 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_PORTAbits F80 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_T3CMX$PORTC0 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_INTCONbits FF2 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_INTERRUPT_Initialize E82 0 CODE 0 text30 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_i2c_slave_setIsrHandler 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Habs1 0 0 ABS 0 abs1 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hdata 0 0 ABS 0 data dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hinit E8 0 CODE 0 init dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htemp 4B 0 COMRAM 1 temp dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext 0 0 ABS 0 text dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Labs1 0 0 ABS 0 abs1 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ldata 0 0 ABS 0 data dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Linit E4 0 CODE 0 init dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltemp 4A 0 COMRAM 1 temp dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext 0 0 ABS 0 text dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_XINST$OFF 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__pnvBANK0 93 0 BANK0 1 nvBANK0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_SSP2CON1 F6C 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_SSP2CON2 F6B 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_SSP2STAT F6D 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_mssp2_enableIRQ E7A 0 CODE 0 text3 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_SSP2STATbits F6D 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+int$flags 4A 0 COMRAM 1 temp dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_INTERRUPT_InterruptManager 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hintret 0 0 ABS 0 intret dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hirdata 0 0 CODE 0 irdata dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+i2c_slave_setWriteIntHandler@handler 16 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_PR2 FBB 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__S0 30000E 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__S1 97 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__S2 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_i2c_slave_PWMRdInterruptHandler 9C0 0 CODE 0 text44 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_i2c_slave_PWMAddrInterruptHandler E70 0 CODE 0 text48 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_i2c_slave_ISR BAE 0 CODE 0 text39 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_currentPWMspeed 8B 0 BANK0 1 bssBANK0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_SYSTEM_Initialize C5C 0 CODE 0 text24 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_i2c_slave_AddrCallBack D0A 0 CODE 0 text47 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_BORV$190 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__HnvBANK0 0 0 ABS 0 nvBANK0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lintentry 0 0 ABS 0 intentry dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hramtop 600 0 RAM 0 ramtop dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_i2c2_driver_TXData E70 0 CODE 0 text42 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_CCPTMRS1bits F48 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_PWRTEN$OFF 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__activetblptr 2 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hstruct 0 0 COMRAM 1 struct dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext10 0 0 ABS 0 text10 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext11 0 0 ABS 0 text11 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext12 0 0 ABS 0 text12 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext13 0 0 ABS 0 text13 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext14 0 0 ABS 0 text14 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext15 0 0 ABS 0 text15 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext16 0 0 ABS 0 text16 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext17 0 0 ABS 0 text17 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext18 0 0 ABS 0 text18 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext19 0 0 ABS 0 text19 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext20 0 0 ABS 0 text20 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext21 0 0 ABS 0 text21 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext22 0 0 ABS 0 text22 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext23 0 0 ABS 0 text23 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext24 0 0 ABS 0 text24 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext25 0 0 ABS 0 text25 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext26 0 0 ABS 0 text26 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext27 0 0 ABS 0 text27 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext28 0 0 ABS 0 text28 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext29 0 0 ABS 0 text29 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext30 0 0 ABS 0 text30 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext31 0 0 ABS 0 text31 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext32 0 0 ABS 0 text32 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext33 0 0 ABS 0 text33 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext34 0 0 ABS 0 text34 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext35 0 0 ABS 0 text35 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext36 0 0 ABS 0 text36 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext37 0 0 ABS 0 text37 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext39 0 0 ABS 0 text39 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext40 0 0 ABS 0 text40 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext41 0 0 ABS 0 text41 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext42 0 0 ABS 0 text42 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext43 0 0 ABS 0 text43 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext44 0 0 ABS 0 text44 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext45 0 0 ABS 0 text45 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext46 0 0 ABS 0 text46 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext47 0 0 ABS 0 text47 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext48 0 0 ABS 0 text48 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext49 0 0 ABS 0 text49 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext50 0 0 ABS 0 text50 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext51 0 0 ABS 0 text51 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext52 0 0 ABS 0 text52 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext53 0 0 ABS 0 text53 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Htext54 0 0 ABS 0 text54 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_EUSART2_Initialize 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_i2c2_driver_busCollisionISR 46 0 COMRAM 1 bssCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_INTERRUPT_InterruptManager 8 0 CODE 0 intcode dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_ADC_Initialize D46 0 CODE 0 text33 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_mssp2_enableIRQ E76 0 CODE 0 text3 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_PWM4_Initialize DB2 0 CODE 0 text27 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_PIE1bits F9D 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_PIE3bits FA3 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+?_ADC_GetConversion 16 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_HFOFST$ON 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext10 E46 0 CODE 0 text10 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext11 E58 0 CODE 0 text11 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext12 D8A 0 CODE 0 text12 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext13 C82 0 CODE 0 text13 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext14 AD2 0 CODE 0 text14 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext15 A24 0 CODE 0 text15 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext16 63E 0 CODE 0 text16 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext17 CA6 0 CODE 0 text17 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext18 736 0 CODE 0 text18 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext19 82C 0 CODE 0 text19 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext20 490 0 CODE 0 text20 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext21 912 0 CODE 0 text21 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext22 E7A 0 CODE 0 text22 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext23 E7E 0 CODE 0 text23 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext24 C5C 0 CODE 0 text24 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext25 DC6 0 CODE 0 text25 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext26 D2A 0 CODE 0 text26 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext27 D9E 0 CODE 0 text27 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext28 C0A 0 CODE 0 text28 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext29 E04 0 CODE 0 text29 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext30 E82 0 CODE 0 text30 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext31 D5E 0 CODE 0 text31 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext32 DB2 0 CODE 0 text32 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext33 D46 0 CODE 0 text33 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext34 D74 0 CODE 0 text34 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext35 B4C 0 CODE 0 text35 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext36 E12 0 CODE 0 text36 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext37 B7E 0 CODE 0 text37 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext39 BAE 0 CODE 0 text39 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext40 CCA 0 CODE 0 text40 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext41 E60 0 CODE 0 text41 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext42 E68 0 CODE 0 text42 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext43 CEA 0 CODE 0 text43 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext44 9C0 0 CODE 0 text44 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext45 BDC 0 CODE 0 text45 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext46 E86 0 CODE 0 text46 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext47 D0A 0 CODE 0 text47 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext48 E70 0 CODE 0 text48 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext49 E8A 0 CODE 0 text49 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext50 DD6 0 CODE 0 text50 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext51 DE6 0 CODE 0 text51 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext52 E92 0 CODE 0 text52 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext53 E8E 0 CODE 0 text53 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext54 0 0 CODE 0 text54 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_PIN_MANAGER_Initialize C34 0 CODE 0 text28 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_i2c2_driver_getRXData E8A 0 CODE 0 text46 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___ftadd 490 0 CODE 0 text20 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___ftdiv 82C 0 CODE 0 text19 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___ftmul 736 0 CODE 0 text18 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___ftneg CA6 0 CODE 0 text17 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___fttol 63E 0 CODE 0 text16 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___lwmod AD2 0 CODE 0 text14 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_i2c_slave_WrInterruptHandler 3C 0 COMRAM 1 bssCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lbigram 0 0 ABS 0 bigram dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lcomram 0 0 ABS 0 comram dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lconfig 300000 0 CONFIG 0 config dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+?___ftpack 16 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_i2c2_driver_TXData E68 0 CODE 0 text42 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_sWrite 44 0 COMRAM 1 bssCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_RCSTA2bits F71 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_i2c_slave_setWriteIntHandler 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+main@error 86 0 BANK0 1 cstackBANK0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_i2c2_driver_getRXData E86 0 CODE 0 text46 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___lwtoft@c 1E 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+stackhi 5FF 0 ABS 0 - /tmp/xcWyqjo05.obj
+stacklo 97 0 ABS 0 - /tmp/xcWyqjo05.obj
+__end_of_i2c_slave_setWriteIntHandler E28 0 CODE 0 text4 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lintcode 8 0 CODE 0 intcode dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+?___lltoft 1E 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_OSCCON2 FD2 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_OSCTUNE F9B 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lintret 0 0 ABS 0 intret dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_adcValue 91 0 BANK0 1 bssBANK0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lirdata 0 0 CODE 0 irdata dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+?___lwtoft 1E 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_ADCON0bits FC2 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_i2c_slave_ISR 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lspace_0 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lspace_1 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lspace_2 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_PWM4_LoadDutyValue B7E 0 CODE 0 text35 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___ftmul@cntr 67 0 BANK0 1 cstackBANK0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__pbssCOMRAM 36 0 COMRAM 1 bssCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___ftmul@sign 68 0 BANK0 1 cstackBANK0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_EUSART2_Write E12 0 CODE 0 text36 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_ADC_Initialize D5E 0 CODE 0 text33 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_i2c_slave_PWMAddrInterruptHandler E76 0 CODE 0 text48 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_PWM4_Initialize D9E 0 CODE 0 text27 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_i2c_slave_PWMRdInterruptHandler 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_PIR1bits F9E 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_PIR3bits FA4 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_PIR4bits F7B 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_LVP$ON 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+i2c2_driver_setI2cISR@f 16 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+end_of_initialization B3E 0 CODE 0 cinit dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+i2c_slave_setIsrHandler@handler 18 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hintentry 0 0 ABS 0 intentry dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_sram_write 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_STVREN$ON 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_RCONbits FD0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+?___ftadd 69 0 BANK0 1 cstackBANK0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+?___ftdiv 21 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+?___ftmul 30 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+?___ftneg 27 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+?___fttol 75 0 BANK0 1 cstackBANK0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_i2c_slave_setReadIntHandler 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+?___lwmod 16 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_i2c_slave_WrCallBack CCA 0 CODE 0 text40 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_i2c2_driver_isData DF6 0 CODE 0 text51 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_i2c2_driver_isRead DE6 0 CODE 0 text50 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+i2c2_driver_TXData@d 1 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lramtop 600 0 RAM 0 ramtop dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_i2c_slave_ISR BDC 0 CODE 0 text39 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__pcinit B14 0 CODE 0 cinit dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_SRAM_CONTROL_INITIALIZE D74 0 CODE 0 text34 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___lltoft@exp 26 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext0 E8 0 CODE 0 text0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext1 C34 0 CODE 0 text1 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext2 A80 0 CODE 0 text2 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext3 E76 0 CODE 0 text3 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext4 E1E 0 CODE 0 text4 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext5 E28 0 CODE 0 text5 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext6 DF6 0 CODE 0 text6 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext7 E32 0 CODE 0 text7 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext8 E3C 0 CODE 0 text8 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ptext9 E50 0 CODE 0 text9 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lstruct 0 0 COMRAM 1 struct dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_mssp2_enableIRQ 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_SRAM_CONTROL_INITIALIZE D8A 0 CODE 0 text34 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext10 0 0 ABS 0 text10 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext11 0 0 ABS 0 text11 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext12 0 0 ABS 0 text12 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext13 0 0 ABS 0 text13 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext14 0 0 ABS 0 text14 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext15 0 0 ABS 0 text15 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext16 0 0 ABS 0 text16 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext17 0 0 ABS 0 text17 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext18 0 0 ABS 0 text18 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext19 0 0 ABS 0 text19 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext20 0 0 ABS 0 text20 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext21 0 0 ABS 0 text21 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext22 0 0 ABS 0 text22 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext23 0 0 ABS 0 text23 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext24 0 0 ABS 0 text24 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext25 0 0 ABS 0 text25 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext26 0 0 ABS 0 text26 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext27 0 0 ABS 0 text27 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext28 0 0 ABS 0 text28 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext29 0 0 ABS 0 text29 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext30 0 0 ABS 0 text30 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext31 0 0 ABS 0 text31 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext32 0 0 ABS 0 text32 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext33 0 0 ABS 0 text33 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext34 0 0 ABS 0 text34 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext35 0 0 ABS 0 text35 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext36 0 0 ABS 0 text36 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext37 0 0 ABS 0 text37 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext39 0 0 ABS 0 text39 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext40 0 0 ABS 0 text40 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext41 0 0 ABS 0 text41 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext42 0 0 ABS 0 text42 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext43 0 0 ABS 0 text43 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext44 0 0 ABS 0 text44 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext45 0 0 ABS 0 text45 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext46 0 0 ABS 0 text46 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext47 0 0 ABS 0 text47 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext48 0 0 ABS 0 text48 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext49 0 0 ABS 0 text49 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext50 0 0 ABS 0 text50 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext51 0 0 ABS 0 text51 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext52 0 0 ABS 0 text52 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext53 0 0 ABS 0 text53 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Ltext54 0 0 ABS 0 text54 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+i2c_slave_setReadIntHandler@handler 16 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_PWM4_LoadDutyValue B4C 0 CODE 0 text35 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__ramtop 600 0 RAM 0 ramtop /tmp/xcWyqjo05.obj
+__size_of_ADC_ISR 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_CCP5_Initialize DC6 0 CODE 0 text32 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lpowerup E4 0 CODE 0 powerup dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_i2c_slave_DefWrInterruptHandler E60 0 CODE 0 text41 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_TMR1_Initialize D46 0 CODE 0 text26 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_TMR1_StartTimer E82 0 CODE 0 text23 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_i2c_slave_setReadIntHandler E32 0 CODE 0 text5 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_i2c_slave_AddrInterruptHandler 3A 0 COMRAM 1 bssCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_i2c2_driver_initSlaveHardware D8A 0 CODE 0 text12 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+PWM4_LoadDutyValue@dutyValue 16 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_i2c2_driver_setAddr 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_i2c2_driver_setMask 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_ADC_GetConversion 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_i2c2_driver_i2cISR 95 0 BANK0 1 nvBANK0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___param_bank 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_i2c_slave_RdCallBack 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___ftmul@exp 63 0 BANK0 1 cstackBANK0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of__initialization B3E 0 CODE 0 cinit dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_WRT0$OFF 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_WRT1$OFF 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_WRT2$OFF 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_WRT3$OFF 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_WRTB$OFF 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_WRTC$OFF 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_WRTD$OFF 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_i2c_slave_AddrCallBack D2A 0 CODE 0 text47 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_i2c2_driver_isData DE6 0 CODE 0 text51 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_i2c2_driver_isRead DD6 0 CODE 0 text50 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_SPBRGH2 F76 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_timer1ReloadVal 93 0 BANK0 1 nvBANK0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___ftpack@sign 1A 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_i2c_slave_open 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_i2c2_driver_releaseClock E8A 0 CODE 0 text49 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_i2c_slave_setAddrIntHandler E3C 0 CODE 0 text8 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_i2c_slave_writeData 49 0 COMRAM 1 dataCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___ftdiv@cntr 2A 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___ftdiv@sign 2F 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_i2c_slave_RdCallBack D0A 0 CODE 0 text43 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_SSP2ADD F6E 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_SSP2BUF F6F 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_SSP2MSK F6A 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_PWM4_Initialize 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_BOREN$SBORDIS 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_EUSART2_Write 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_main 490 0 CODE 0 text0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__pintcode 8 0 CODE 0 intcode dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_CCP5_Initialize DB2 0 CODE 0 text32 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+i2c2_driver_setAddr@addr 16 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_PORTA F80 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_PORTC F82 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+i2c_slave_setAddrIntHandler@handler 16 0 COMRAM 1 cstackCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_T1CON FCD 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_T2CON FBA 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_TMR1H FCF 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_TMR1L FCE 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_TRISA F92 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_TRISB F93 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_TRISC F94 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_CP0$OFF 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_CP1$OFF 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__HRAM 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hbss 0 0 RAM 1 bss dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hram 0 0 ABS 0 ram dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hsfr 0 0 ABS 0 sfr dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__LRAM 1 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lbss 0 0 RAM 1 bss dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lram 0 0 ABS 0 ram dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lsfr 0 0 ABS 0 sfr dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_CP2$OFF 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_CP3$OFF 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_TMR1_Initialize D2A 0 CODE 0 text26 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_TMR1_StartTimer E7E 0 CODE 0 text23 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_count 8F 0 BANK0 1 bssBANK0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_i2c2_driver_setAddr E58 0 CODE 0 text11 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_i2c2_driver_setMask E50 0 CODE 0 text9 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_PLLCFG$OFF 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_CPB$OFF 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_sAddr 40 0 COMRAM 1 bssCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_sRead 42 0 COMRAM 1 bssCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_CCP4CON F57 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_CCP5CON F54 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___fttol@sign1 7E 0 BANK0 1 cstackBANK0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_i2c_slave_RdInterruptHandler 3E 0 COMRAM 1 bssCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_OSCILLATOR_Initialize E12 0 CODE 0 text29 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_i2c_slave_BusCollisionISR E94 0 CODE 0 text52 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__initialization B14 0 CODE 0 cinit dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__pbssBANK0 8B 0 BANK0 1 bssBANK0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__pdataCOMRAM 49 0 COMRAM 1 dataCOMRAM dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_T2CONbits FBA 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_i2c_slave_setIsrHandler DF6 0 CODE 0 text6 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_ADC_ISR E92 0 CODE 0 text53 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Lifardata 0 0 CODE 0 ifardata dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_i2c2_driver_setBusCollisionISR 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_EUSART2_Write E1E 0 CODE 0 text36 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_i2c2_driver_setI2cISR E3C 0 CODE 0 text7 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_i2c_slave_setIsrHandler E04 0 CODE 0 text6 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__CFG_MCLRE$EXTMCLR 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__Hintcode E4 0 CODE 0 intcode dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__size_of_INTERRUPT_Initialize 0 0 ABS 0 - dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+___ftmul@f3_as_product 64 0 BANK0 1 cstackBANK0 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+_OSCILLATOR_Initialize E04 0 CODE 0 text29 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_TMR2_Initialize DD6 0 CODE 0 text25 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+__end_of_TMR2_StartTimer E7E 0 CODE 0 text22 dist/default/production/Lab2-Remote-SRAM-Control.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+idloc 0 200000 200000 8 1
+cstackCOMRAM 1 1 1 4A 1
+cstackBANK0 1 60 60 37 1
+reset_vec 0 0 0 4 1
+intcode 0 8 8 E8D 1
+config 0 300000 300000 E 1
